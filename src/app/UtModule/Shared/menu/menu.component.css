@@ -1,0 +1,10 @@
+button {
+  margin: 10px;
+}
+
+a {
+  color: rgb(20, 240, 12);
+  margin: 10px;
+  font-size: large;
+  text-decoration-color: blue;
+}

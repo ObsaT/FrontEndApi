@@ -1,0 +1,9 @@
+.container{
+  width: 400px;
+  margin-top: 100px;
+  background-color: darkgrey;
+
+}
+.form-group{
+  margin: 20px;
+}

@@ -1,0 +1,20 @@
+.mainForm {
+ margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.form-group {
+   max-width: 800px;
+   background-color: rgb(238, 211, 201);
+}
+label{
+  text-decoration-color: beige;
+}
+select{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button{
+  margin-right: 20px;
+}

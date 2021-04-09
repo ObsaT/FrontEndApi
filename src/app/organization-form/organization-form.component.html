@@ -1,0 +1,15 @@
+<form #myForm="ngForm" class="mainForm" (ngSubmit)="onSubmit(myForm)" autocomplete="off" style="margin: 200px;">
+
+  <div class="form-group">
+    <input type="hidden" name="ownership" #ownership="ngModel" [(ngModel)]="service.droneData.ownership" id="ownership"
+      class="form-control" placeholder="" aria-describedby="helpId">
+  </div>
+
+  <div class="form-group">
+    <label for="organisationName">Organization name</label>
+    <input type="text" name="organisationName" #organisationName="ngModel" [(ngModel)]="service.organizationData.organisationName" id="organisationName"
+      class="form-control" placeholder="Organization name" aria-describedby="helpId">
+  </div>
+<span style="margin-top: 50px;"></span>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

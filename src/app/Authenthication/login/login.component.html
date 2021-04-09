@@ -1,0 +1,16 @@
+<section *ngIf="IsLoggedIn()"  class="login-dark" >
+  <form  #form="ngForm" autocomplete="off" (ngSubmit)="login()">
+      <h2 class="sr-only"></h2>
+      <h1 class="lead mb-4" style="color: rgb(231, 231, 235);">Login To your Account</h1>
+      <i class="bi bi-door-open-fill"></i>
+      <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+      <input type="text" class="form-control" placeholder="First name" aria-label="First name" name= "username" #username required ="ngModel" [(ngModel)]="model.username">
+      <input type="text" class="form-control" placeholder="Password" aria-label="password" name ="password" #password required ="ngModel" [(ngModel)]="model.password">
+
+      <button type="submit" [disabled] ="!form.valid" class="btn btn-primary">Login</button>
+      <a class="forgot" href="#">Forgot your email or password?</a>
+  </form>
+</section>
+
+<app-home></app-home>
+

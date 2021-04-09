@@ -1,0 +1,13 @@
+form{
+  background-color: rgb(241, 234, 234);
+  width: 600px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+button{
+  margin-top: 20px;
+
+}
+label{
+  margin-bottom: 20px;
+}

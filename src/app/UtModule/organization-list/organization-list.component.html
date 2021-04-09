@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead  >
+    <tr>
+      <th>ID</th>
+      <th>organisationName</th>
+      <th> <button type="button" class="btn btn-primary" routerLink="/organization">Add New</button></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of service.orgList">
+        <td>{{item.organisationID}}</td>
+        <td scope="row" >{{item.organisationName}}</td>
+        <td scope="row" >
+          <button type="button" class="btn btn-primary" (click)="onDelete(item.organisationID)">Delete</button>
+      </tr>
+    </tbody>
+</table>
