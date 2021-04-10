@@ -19,7 +19,6 @@ export class LoginComponent implements OnInit {
   login() {
     this.Service.Login(this.model).subscribe(
       next => {
-         alert('logged in successfully');
      this.routein.navigate(['/register']);
       },
       err => {
